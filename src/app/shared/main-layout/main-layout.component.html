@@ -3,18 +3,18 @@
     <div class="navigation__container">
         <button mat-button type="button" (click)="drawer.toggle()" class="close__button">
           <mat-icon>close</mat-icon>
-          Close
+          Закрити
         </button>
 
         <mat-list role="list">
-          <mat-list-item role="listitem">Головна</mat-list-item><mat-divider></mat-divider>
-          <mat-list-item role="listitem">Кухні</mat-list-item><mat-divider></mat-divider>
-          <mat-list-item role="listitem">Шафи</mat-list-item><mat-divider></mat-divider>
-          <mat-list-item role="listitem">Фасади</mat-list-item><mat-divider></mat-divider>
-          <mat-list-item role="listitem">Наші Салони</mat-list-item><mat-divider></mat-divider>
-          <mat-list-item role="listitem">Контакти</mat-list-item><mat-divider></mat-divider>
-          <mat-list-item role="listitem">Про Компанію</mat-list-item><mat-divider></mat-divider>
-          <mat-list-item role="listitem">Кухні зі знижкою -60%</mat-list-item>
+          <mat-list-item role="listitem" (click)="drawer.toggle()" routerLink="/">Головна</mat-list-item><mat-divider></mat-divider>
+          <mat-list-item role="listitem" (click)="drawer.toggle()" routerLink="/kitchens">Кухні</mat-list-item><mat-divider></mat-divider>
+          <mat-list-item role="listitem" (click)="drawer.toggle()" routerLink="/wardrobes">Шафи</mat-list-item><mat-divider></mat-divider>
+          <mat-list-item role="listitem" (click)="drawer.toggle()" routerLink="/fasades">Фасади</mat-list-item><mat-divider></mat-divider>
+          <mat-list-item role="listitem" (click)="drawer.toggle()" routerLink="/salons">Наші Салони</mat-list-item><mat-divider></mat-divider>
+          <mat-list-item role="listitem" (click)="drawer.toggle()" routerLink="/contacts">Контакти</mat-list-item><mat-divider></mat-divider>
+          <mat-list-item role="listitem" (click)="drawer.toggle()" routerLink="/about">Про Компанію</mat-list-item><mat-divider></mat-divider>
+          <mat-list-item role="listitem" (click)="drawer.toggle()" routerLink="/sale">Кухні зі знижкою -60%</mat-list-item>
         </mat-list>
 
     </div>
@@ -28,7 +28,7 @@
         <button mat-icon-button type="button" (click)="drawer.toggle()">
           <mat-icon>menu</mat-icon>
         </button>
-        KOLSS
+        <a routerLink="/">KOLSS</a>
       </app-navigation>
     </div>
 

@@ -9,12 +9,26 @@ import { MainLayoutComponent } from './shared/main-layout/main-layout.component'
 import { SharedModule } from './shared/shared.module';
 import { HomePageComponent } from './home-page/home-page.component';
 import { MaterialModule } from './material/material.module';
+import { KitchensComponent } from './kitchens/kitchens.component';
+import { WardrobesComponent } from './wardrobes/wardrobes.component';
+import { FasadesComponent } from './fasades/fasades.component';
+import { SalonsComponent } from './salons/salons.component';
+import { ContactsComponent } from './contacts/contacts.component';
+import { AboutComponent } from './about/about.component';
+import { SaleComponent } from './sale/sale.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainLayoutComponent,
-    HomePageComponent
+    HomePageComponent,
+    KitchensComponent,
+    WardrobesComponent,
+    FasadesComponent,
+    SalonsComponent,
+    ContactsComponent,
+    AboutComponent,
+    SaleComponent
   ],
   imports: [
     BrowserModule,
