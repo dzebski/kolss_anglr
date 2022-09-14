@@ -1,0 +1,29 @@
+
+// Footer to the Bottom
+.main__layout {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+}
+
+.drawer-container {
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.drawer-sidenav {
+  width: 50%;
+}
+
+.navigation__container {
+}
+
+.close__button{
+  margin: 1em;
+}
+
+mat-drawer mat-list-item:hover {
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}

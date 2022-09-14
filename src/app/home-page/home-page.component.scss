@@ -1,0 +1,19 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.kitchen__card {
+  border-radius: 10px;
+  overflow: hidden;
+  max-height: 100vh;
+  transform: scale(1);
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.kitchen__card:hover {
+  transform: scale(1.02);
+}

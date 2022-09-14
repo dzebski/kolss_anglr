@@ -1,0 +1,46 @@
+<mat-drawer-container class="drawer-container" autosize>
+  <mat-drawer #drawer class="drawer-sidenav" mode="over">
+    <div class="navigation__container">
+        <button mat-button type="button" (click)="drawer.toggle()" class="close__button">
+          <mat-icon>close</mat-icon>
+          Close
+        </button>
+
+        <mat-list role="list">
+          <mat-list-item role="listitem">Головна</mat-list-item><mat-divider></mat-divider>
+          <mat-list-item role="listitem">Кухні</mat-list-item><mat-divider></mat-divider>
+          <mat-list-item role="listitem">Шафи</mat-list-item><mat-divider></mat-divider>
+          <mat-list-item role="listitem">Фасади</mat-list-item><mat-divider></mat-divider>
+          <mat-list-item role="listitem">Наші Салони</mat-list-item><mat-divider></mat-divider>
+          <mat-list-item role="listitem">Контакти</mat-list-item><mat-divider></mat-divider>
+          <mat-list-item role="listitem">Про Компанію</mat-list-item><mat-divider></mat-divider>
+          <mat-list-item role="listitem">Кухні зі знижкою -60%</mat-list-item>
+        </mat-list>
+
+    </div>
+  </mat-drawer>
+
+  <div class="main__layout">
+
+    <!-- Global Navigation -->
+    <div class="main__nav">
+      <app-navigation>
+        <button mat-icon-button type="button" (click)="drawer.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+        KOLSS
+      </app-navigation>
+    </div>
+
+    <!-- Global Container -->
+    <div class="main__container">
+      <router-outlet></router-outlet>
+    </div>
+
+    <!-- Fixed Bottom Footer for a whloe App -->
+    <div class="main__footer">
+      <app-footer></app-footer>
+    </div>
+
+  </div>
+</mat-drawer-container>
